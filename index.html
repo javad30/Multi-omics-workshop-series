@@ -310,13 +310,13 @@ document.addEventListener('DOMContentLoaded', function(event)
 </div>
 </div>
 </div></div>
-<div id="wb_Image5" style="position:absolute;left:506px;top:2106px;width:462px;height:239px;z-index:39;">
-<img src="images/3.png" id="Image5" alt="" width="462" height="240"></div>
+<div id="wb_Image5" style="position:absolute;left:589px;top:2125px;width:406px;height:210px;z-index:39;">
+<img src="images/3.png" id="Image5" alt="" width="406" height="211"></div>
 <img src="images/img0006.png" id="Banner4" alt="Obtaining sequence data" style="border-width:0;position:absolute;left:405px;top:4133px;width:856px;height:44px;z-index:40;" width="856" height="44">
-<div id="wb_Obtaining_sequence_data" style="position:absolute;left:370px;top:4405px;width:36px;height:33px;z-index:41;">
+<div id="wb_Obtaining_sequence_data" style="position:absolute;left:370px;top:4144px;width:36px;height:33px;z-index:41;">
 <div id="Obtaining_sequence_data" style="visibility:hidden;"></div>
 </div>
-<div id="wb_Text9" style="position:absolute;left:406px;top:4577px;width:859px;height:599px;text-align:justify;z-index:42;">
+<div id="wb_Text9" style="position:absolute;left:406px;top:4577px;width:859px;height:620px;text-align:justify;z-index:42;">
 <p><span style="font-weight:bold;">SRA: </span>You can either bring your sequence of intrest (above) or dowload the sequence from online resources. One of the most useful online resources to download archive sequence files is using NCBI SRA. To do so:</p>
 <br>
 <ul style="list-style-type:upper-latin;">
@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function(event)
 </li>
 <li style="margin:0 0 0 24px;">After installing sra-toolkit use below code to dowaload the sequence with your SRA id that you found before (step C). For example I was interested in Human microbiome and found this sequnce on here (https://www.ncbi.nlm.nih.gov/sra/SRX25254909[accn]) and the SRA id was <span style="font-weight:bold;">SRR29754043. </span>	<br/><br/><br/>&nbsp;
 </li>
-<li style="margin:0 0 0 24px;">Now we have to change the SRA file to fastq file. Go to the downloaded folder using cd command then use below code to change sra to fastq file.<br/><br/><br/><br/><br/><br/>
+<li style="margin:0 0 0 24px;">Now we have to change the SRA file to fastq file. Go to the downloaded folder using cd command then use below code to change sra to fastq file.<br/><br/><br/><br/><br/><br/><br/>
 </li>
 <li style="margin:0 0 0 24px;">Now lest check the fastq file quality using fastqc software.
 </li>
@@ -339,18 +339,18 @@ document.addEventListener('DOMContentLoaded', function(event)
 <br></div>
 <div id="wb_Text23" style="position:absolute;left:409px;top:4747px;width:837px;height:18px;z-index:43;">
 <p>sudo apt install sra-toolkit</p></div>
-<div id="wb_Text24" style="position:absolute;left:409px;top:4877px;width:837px;height:18px;z-index:44;">
+<div id="wb_Text24" style="position:absolute;left:411px;top:4876px;width:837px;height:18px;z-index:44;">
 <p>prefetch SRR29754043</p></div>
-<div id="wb_Text25" style="position:absolute;left:409px;top:5021px;width:837px;height:18px;z-index:45;">
+<div id="wb_Text25" style="position:absolute;left:408px;top:5029px;width:837px;height:18px;z-index:45;">
 <p>fastq-dump --split-files SRR29754043&nbsp;&nbsp; -O your/output/file</p></div>
-<div id="wb_Text26" style="position:absolute;left:408px;top:4973px;width:837px;height:18px;z-index:46;">
+<div id="wb_Text26" style="position:absolute;left:407px;top:4986px;width:837px;height:18px;z-index:46;">
 <p>cd SRR29754043</p></div>
-<div id="wb_Text27" style="position:absolute;left:405px;top:5106px;width:837px;height:54px;z-index:47;">
+<div id="wb_Text27" style="position:absolute;left:408px;top:5127px;width:837px;height:54px;z-index:47;">
 <p>cd your/output/folder</p>
 <br>
 <p>fastqc &nbsp;*fastq&nbsp;&nbsp; -O SRA_fastq</p></div>
-<img src="images/img0007.png" id="Banner5" alt="Trimming sequence data" style="border-width:0;position:absolute;left:405px;top:5259px;width:856px;height:44px;z-index:48;" width="856" height="44">
-<div id="wb_Trimming_sequence_data" style="position:absolute;left:367px;top:5265px;width:36px;height:33px;z-index:49;">
+<img src="images/img0007.png" id="Banner5" alt="Trimming sequence data" style="border-width:0;position:absolute;left:407px;top:5243px;width:856px;height:44px;z-index:48;" width="856" height="44">
+<div id="wb_Trimming_sequence_data" style="position:absolute;left:367px;top:5243px;width:36px;height:33px;z-index:49;">
 <div id="Trimming_sequence_data" style="visibility:hidden;"></div>
 </div>
 <div id="wb_Text28" style="position:absolute;left:409px;top:5303px;width:859px;height:744px;z-index:50;">
@@ -398,7 +398,7 @@ document.addEventListener('DOMContentLoaded', function(event)
 <p>sudo apt update</p>
 <br>
 <p>sudo apt install bowtie2</p></div>
-<div id="wb_Text34" style="position:absolute;left:407px;top:3251px;width:837px;height:18px;z-index:60;">
+<div id="wb_Text34" style="position:absolute;left:405px;top:3325px;width:837px;height:18px;z-index:60;">
 <p>bowtie2 --help</p></div>
 <div id="wb_Text36" style="position:absolute;left:398px;top:6219px;width:862px;height:1880px;text-align:justify;z-index:61;">
 <p>Sometimes we have host DNA and we need to remove the host DNA before doing any downstream analysis. For example, if I am looking at mice gut microbiome, I do not need mice DNA, however, during the DNA extractions some of the mice gut intestinal epithelial DNA will be sequenced as well. To remove that we are going to use Bowtie2. Bowtie2 is a reference base alinement and has huge applications in RNA and WG sequencing. To remove host DNA run below code. We will follow the instructions provided here:</p>
@@ -473,19 +473,19 @@ document.addEventListener('DOMContentLoaded', function(event)
 <br>
 <br>
 <br></div>
-<div id="wb_Text37" style="position:absolute;left:406px;top:6813px;width:731px;height:36px;z-index:62;">
+<div id="wb_Text37" style="position:absolute;left:406px;top:6795px;width:731px;height:36px;z-index:62;">
 <p>bowtie2&nbsp; -x 0_Host_genome/Solanaceae/Solanaceae&nbsp; -1 S28_R1.gz&nbsp; -2 S28_R2.gz&nbsp; --un-conc-gz&nbsp;&nbsp; S28_removed_Solanaceae&nbsp; -S Mapped_and_unmapped_Solanaceae.sam&nbsp; -p 20 --very-sensitive-local</p></div>
-<div id="wb_Text35" style="position:absolute;left:403px;top:6709px;width:837px;height:18px;z-index:63;">
+<div id="wb_Text35" style="position:absolute;left:403px;top:6694px;width:837px;height:18px;z-index:63;">
 <p> bowtie2-build Solanaceae.fna&nbsp; Solanaceae --threads 20</p></div>
-<div id="wb_Image7" style="position:absolute;left:564px;top:6416px;width:457px;height:221px;z-index:64;">
+<div id="wb_Image7" style="position:absolute;left:564px;top:6413px;width:457px;height:174px;z-index:64;">
 <img src="images/6.png" id="Image7" alt="" width="457" height="227"></div>
-<div id="wb_Image11" style="position:absolute;left:484px;top:6875px;width:643px;height:245px;z-index:65;">
+<div id="wb_Image11" style="position:absolute;left:484px;top:6875px;width:643px;height:215px;z-index:65;">
 <img src="images/7.png" id="Image11" alt="" width="643" height="246"></div>
 <div id="wb_Image6" style="position:absolute;left:500px;top:5526px;width:652px;height:79px;z-index:66;">
 <img src="images/5.png" id="Image6" alt="" width="652" height="79"></div>
 <div id="wb_Image8" style="position:absolute;left:451px;top:7344px;width:767px;height:87px;z-index:67;">
 <img src="images/10.png" id="Image8" alt="" width="767" height="87"></div>
-<div id="wb_Text38" style="position:absolute;left:403px;top:7523px;width:837px;height:36px;z-index:68;">
+<div id="wb_Text38" style="position:absolute;left:405px;top:7541px;width:837px;height:36px;z-index:68;">
 <p>mv S28_removed_Solanaceae.1&nbsp; S28_host_removed_R1.fastq.gz</p>
 <p>mv S28_removed_Solanaceae.2&nbsp;&nbsp; S28_host_removed_R2.fastq.gz</p></div>
 <div id="wb_Text57" style="position:absolute;left:403px;top:7703px;width:837px;height:18px;z-index:69;">
