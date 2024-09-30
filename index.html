@@ -313,10 +313,7 @@ document.addEventListener('DOMContentLoaded', function(event)
 <div id="wb_Image5" style="position:absolute;left:589px;top:2125px;width:406px;height:210px;z-index:39;">
 <img src="images/3.png" id="Image5" alt="" width="406" height="211"></div>
 <img src="images/img0006.png" id="Banner4" alt="Obtaining sequence data" style="border-width:0;position:absolute;left:405px;top:4133px;width:856px;height:44px;z-index:40;" width="856" height="44">
-<div id="wb_Obtaining_sequence_data" style="position:absolute;left:370px;top:4144px;width:36px;height:33px;z-index:41;">
-<div id="Obtaining_sequence_data" style="visibility:hidden;"></div>
-</div>
-<div id="wb_Text9" style="position:absolute;left:406px;top:4577px;width:859px;height:620px;text-align:justify;z-index:42;">
+<div id="wb_Text9" style="position:absolute;left:406px;top:4577px;width:859px;height:620px;text-align:justify;z-index:41;">
 <p><span style="font-weight:bold;">SRA: </span>You can either bring your sequence of intrest (above) or dowload the sequence from online resources. One of the most useful online resources to download archive sequence files is using NCBI SRA. To do so:</p>
 <br>
 <ul style="list-style-type:upper-latin;">
@@ -337,23 +334,23 @@ document.addEventListener('DOMContentLoaded', function(event)
 <br>
 <br>
 <br></div>
-<div id="wb_Text23" style="position:absolute;left:409px;top:4747px;width:837px;height:18px;z-index:43;">
+<div id="wb_Text23" style="position:absolute;left:409px;top:4747px;width:837px;height:18px;z-index:42;">
 <p>sudo apt install sra-toolkit</p></div>
-<div id="wb_Text24" style="position:absolute;left:411px;top:4876px;width:837px;height:18px;z-index:44;">
+<div id="wb_Text24" style="position:absolute;left:411px;top:4876px;width:837px;height:18px;z-index:43;">
 <p>prefetch SRR29754043</p></div>
-<div id="wb_Text25" style="position:absolute;left:408px;top:5029px;width:837px;height:18px;z-index:45;">
+<div id="wb_Text25" style="position:absolute;left:408px;top:5029px;width:837px;height:18px;z-index:44;">
 <p>fastq-dump --split-files SRR29754043&nbsp;&nbsp; -O your/output/file</p></div>
-<div id="wb_Text26" style="position:absolute;left:407px;top:4986px;width:837px;height:18px;z-index:46;">
+<div id="wb_Text26" style="position:absolute;left:407px;top:4986px;width:837px;height:18px;z-index:45;">
 <p>cd SRR29754043</p></div>
-<div id="wb_Text27" style="position:absolute;left:408px;top:5127px;width:837px;height:54px;z-index:47;">
+<div id="wb_Text27" style="position:absolute;left:408px;top:5127px;width:837px;height:54px;z-index:46;">
 <p>cd your/output/folder</p>
 <br>
 <p>fastqc &nbsp;*fastq&nbsp;&nbsp; -O SRA_fastq</p></div>
-<img src="images/img0007.png" id="Banner5" alt="Trimming sequence data" style="border-width:0;position:absolute;left:407px;top:5243px;width:856px;height:44px;z-index:48;" width="856" height="44">
-<div id="wb_Trimming_sequence_data" style="position:absolute;left:367px;top:5243px;width:36px;height:33px;z-index:49;">
+<img src="images/img0007.png" id="Banner5" alt="Trimming sequence data" style="border-width:0;position:absolute;left:407px;top:5243px;width:856px;height:44px;z-index:47;" width="856" height="44">
+<div id="wb_Trimming_sequence_data" style="position:absolute;left:367px;top:5243px;width:36px;height:33px;z-index:48;">
 <div id="Trimming_sequence_data" style="visibility:hidden;"></div>
 </div>
-<div id="wb_Text28" style="position:absolute;left:409px;top:5303px;width:859px;height:744px;z-index:50;">
+<div id="wb_Text28" style="position:absolute;left:409px;top:5303px;width:859px;height:744px;z-index:49;">
 <p>There are a variety of software for Trimming (e.g, removing adapter). Adapter sequences should be removed from reads because they interfere with downstream analyses, such as alignment of reads to a reference. SRA include a few changes to the sequnce files, that are not compatible with some of the analysis. However, for triming you can use your SRA sequences for practice.</p>
 <br>
 <ul style="list-style-type:upper-latin;">
@@ -378,29 +375,29 @@ document.addEventListener('DOMContentLoaded', function(event)
 <p>It works with FASTQ (using phred + 33 or phred + 64 quality scores, depending on the Illumina pipeline used), either uncompressed or gzipp'ed FASTQ. Use of gzip format is determined based on the .gz extension.</p>
 <br>
 <p>For single-ended data, one input and one output file are specified, plus the processing steps. For paired-end data, two input files are specified, and 4 output files, 2 for the 'paired' output where both reads survived the processing, and 2 for corresponding 'unpaired' output where a read survived, but the partner read did not.</p></div>
-<div id="wb_Text29" style="position:absolute;left:400px;top:5475px;width:837px;height:18px;z-index:51;">
+<div id="wb_Text29" style="position:absolute;left:400px;top:5475px;width:837px;height:18px;z-index:50;">
 <p>grep AGATGTGTATAAGAGACAG&nbsp; SRR29754043_2.fastq</p></div>
-<div id="wb_Text30" style="position:absolute;left:400px;top:5812px;width:837px;height:54px;z-index:52;">
+<div id="wb_Text30" style="position:absolute;left:400px;top:5812px;width:837px;height:54px;z-index:51;">
 <p>java -jar trimmomatic-0.39.jar PE S28_R1.gz S28_R2.gz output_forward_paired.fq.gz output_forward_unpaired.fq.gz output_reverse_paired.fq.gz output_reverse_unpaired.fq.gz ILLUMINACLIP:NexteraPE-PE.fa:2:30:10:2:True LEADING:3 TRAILING:3 MINLEN:36</p></div>
-<img src="images/img0008.png" id="Banner6" alt="Removing host contamination" style="border-width:0;position:absolute;left:396px;top:6155px;width:856px;height:44px;z-index:53;" width="856" height="44">
-<div id="wb_Removing_host_contamination" style="position:absolute;left:364px;top:6155px;width:36px;height:33px;z-index:54;">
+<img src="images/img0008.png" id="Banner6" alt="Removing host contamination" style="border-width:0;position:absolute;left:396px;top:6155px;width:856px;height:44px;z-index:52;" width="856" height="44">
+<div id="wb_Removing_host_contamination" style="position:absolute;left:364px;top:6155px;width:36px;height:33px;z-index:53;">
 <div id="Removing_host_contamination" style="visibility:hidden;"></div>
 </div>
-<img src="images/img0009.png" id="Banner7" alt="Bowtie2" style="border-width:0;position:absolute;left:403px;top:2734px;width:856px;height:44px;z-index:55;" width="856" height="44">
-<div id="wb_bowtie2" style="position:absolute;left:367px;top:2734px;width:36px;height:33px;z-index:56;">
+<img src="images/img0009.png" id="Banner7" alt="Bowtie2" style="border-width:0;position:absolute;left:403px;top:2734px;width:856px;height:44px;z-index:54;" width="856" height="44">
+<div id="wb_bowtie2" style="position:absolute;left:367px;top:2734px;width:36px;height:33px;z-index:55;">
 <div id="bowtie2" style="visibility:hidden;"></div>
 </div>
-<div id="wb_Text31" style="position:absolute;left:409px;top:2767px;width:859px;height:496px;z-index:57;">
+<div id="wb_Text31" style="position:absolute;left:409px;top:2767px;width:859px;height:496px;z-index:56;">
 <span style="color:#000000;font-family:'Times New Roman';font-size:19px;"><br>Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences. It is particularly good at aligning reads of about 50 up to 100s of characters to relatively long (e.g. mammalian) genomes. In my opinion Bowtie2 is probably the most improtant software in genomics (Cited 50K)! Read more about Bowtie2 here: https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml.<strong><br><br></strong>There are multiple ways to download and isntall Bowtie2. The two most common ways: <strong><br><br><br>a) Install bowtie2 using conda<br><br><br><br><br>b) Install bowtie2 using a package manager (recommended!)<br><br></strong><br><br><br><br><br><strong>C) Check installation</strong><br><br></span></div>
-<div id="wb_Text33" style="position:absolute;left:409px;top:3001px;width:837px;height:18px;z-index:58;">
+<div id="wb_Text33" style="position:absolute;left:409px;top:3001px;width:837px;height:18px;z-index:57;">
 <p>conda install -c bioconda bowtie2</p></div>
-<div id="wb_Text32" style="position:absolute;left:405px;top:3108px;width:837px;height:54px;z-index:59;">
+<div id="wb_Text32" style="position:absolute;left:405px;top:3108px;width:837px;height:54px;z-index:58;">
 <p>sudo apt update</p>
 <br>
 <p>sudo apt install bowtie2</p></div>
-<div id="wb_Text34" style="position:absolute;left:405px;top:3325px;width:837px;height:18px;z-index:60;">
+<div id="wb_Text34" style="position:absolute;left:405px;top:3325px;width:837px;height:18px;z-index:59;">
 <p>bowtie2 --help</p></div>
-<div id="wb_Text36" style="position:absolute;left:398px;top:6219px;width:862px;height:1880px;text-align:justify;z-index:61;">
+<div id="wb_Text36" style="position:absolute;left:398px;top:6219px;width:862px;height:1880px;text-align:justify;z-index:60;">
 <p>Sometimes we have host DNA and we need to remove the host DNA before doing any downstream analysis. For example, if I am looking at mice gut microbiome, I do not need mice DNA, however, during the DNA extractions some of the mice gut intestinal epithelial DNA will be sequenced as well. To remove that we are going to use Bowtie2. Bowtie2 is a reference base alinement and has huge applications in RNA and WG sequencing. To remove host DNA run below code. We will follow the instructions provided here:</p>
 <p style="font-size:20px;line-height:23px;font-weight:bold;">https://www.metagenomics.wiki/tools/short-read/remove-host-sequences</p>
 <p style="font-size:20px;line-height:23px;font-weight:bold;">&nbsp;</p>
@@ -473,33 +470,36 @@ document.addEventListener('DOMContentLoaded', function(event)
 <br>
 <br>
 <br></div>
-<div id="wb_Text37" style="position:absolute;left:406px;top:6795px;width:731px;height:36px;z-index:62;">
+<div id="wb_Text37" style="position:absolute;left:406px;top:6795px;width:731px;height:36px;z-index:61;">
 <p>bowtie2&nbsp; -x 0_Host_genome/Solanaceae/Solanaceae&nbsp; -1 S28_R1.gz&nbsp; -2 S28_R2.gz&nbsp; --un-conc-gz&nbsp;&nbsp; S28_removed_Solanaceae&nbsp; -S Mapped_and_unmapped_Solanaceae.sam&nbsp; -p 20 --very-sensitive-local</p></div>
-<div id="wb_Text35" style="position:absolute;left:403px;top:6694px;width:837px;height:18px;z-index:63;">
+<div id="wb_Text35" style="position:absolute;left:403px;top:6694px;width:837px;height:18px;z-index:62;">
 <p> bowtie2-build Solanaceae.fna&nbsp; Solanaceae --threads 20</p></div>
-<div id="wb_Image7" style="position:absolute;left:564px;top:6413px;width:457px;height:174px;z-index:64;">
+<div id="wb_Image7" style="position:absolute;left:564px;top:6413px;width:457px;height:174px;z-index:63;">
 <img src="images/6.png" id="Image7" alt="" width="457" height="227"></div>
-<div id="wb_Image11" style="position:absolute;left:484px;top:6875px;width:643px;height:215px;z-index:65;">
+<div id="wb_Image11" style="position:absolute;left:484px;top:6875px;width:643px;height:215px;z-index:64;">
 <img src="images/7.png" id="Image11" alt="" width="643" height="246"></div>
-<div id="wb_Image6" style="position:absolute;left:500px;top:5526px;width:652px;height:79px;z-index:66;">
+<div id="wb_Image6" style="position:absolute;left:500px;top:5526px;width:652px;height:79px;z-index:65;">
 <img src="images/5.png" id="Image6" alt="" width="652" height="79"></div>
-<div id="wb_Image8" style="position:absolute;left:451px;top:7344px;width:767px;height:87px;z-index:67;">
+<div id="wb_Image8" style="position:absolute;left:451px;top:7344px;width:767px;height:87px;z-index:66;">
 <img src="images/10.png" id="Image8" alt="" width="767" height="87"></div>
-<div id="wb_Text38" style="position:absolute;left:405px;top:7541px;width:837px;height:36px;z-index:68;">
+<div id="wb_Text38" style="position:absolute;left:405px;top:7541px;width:837px;height:36px;z-index:67;">
 <p>mv S28_removed_Solanaceae.1&nbsp; S28_host_removed_R1.fastq.gz</p>
 <p>mv S28_removed_Solanaceae.2&nbsp;&nbsp; S28_host_removed_R2.fastq.gz</p></div>
-<div id="wb_Text57" style="position:absolute;left:403px;top:7703px;width:837px;height:18px;z-index:69;">
+<div id="wb_Text57" style="position:absolute;left:403px;top:7703px;width:837px;height:18px;z-index:68;">
 <p>conda install bioconda::samtools</p></div>
-<div id="wb_Text41" style="position:absolute;left:398px;top:7757px;width:837px;height:18px;z-index:70;">
+<div id="wb_Text41" style="position:absolute;left:398px;top:7757px;width:837px;height:18px;z-index:69;">
 <p> samtools view -bS Mapped_and_unmapped_Solanaceae.sam&nbsp; &gt; S28_mapped_and_unmapped.bam</p></div>
-<div id="wb_Text58" style="position:absolute;left:400px;top:8004px;width:837px;height:18px;z-index:71;">
+<div id="wb_Text58" style="position:absolute;left:400px;top:8004px;width:837px;height:18px;z-index:70;">
 <p>samtools index S28_sorted.bam S28_sorted.bai</p></div>
-<div id="wb_Text59" style="position:absolute;left:400px;top:7875px;width:837px;height:18px;z-index:72;">
+<div id="wb_Text59" style="position:absolute;left:400px;top:7875px;width:837px;height:18px;z-index:71;">
 <p>samtools sort S28_mapped_and_unmapped.bam -o S28_sorted.bam</p></div>
-<div id="wb_Text45" style="position:absolute;left:1701px;top:4190px;width:357px;height:15px;z-index:73;">
+<div id="wb_Text45" style="position:absolute;left:1701px;top:4190px;width:357px;height:15px;z-index:72;">
 &nbsp;</div>
-<div id="wb_Text39" style="position:absolute;left:406px;top:4205px;width:859px;height:248px;z-index:74;">
+<div id="wb_Text39" style="position:absolute;left:406px;top:4205px;width:859px;height:248px;z-index:73;">
 <span style="color:#000000;font-family:'Times New Roman';font-size:19px;">Test data: We will pratice with two types of datasets. A. Online and B. Stored data.<br><br><br>To download my own data:<br><br><br><strong>Dropbox:<br><br></strong>https://www.dropbox.com/scl/fo/syejnazitw7lzkj5rcot2/AKIDndJnXSt19QbwLuhAIfs?rlkey=ykh9v933296fhspndkezanocq&amp;st=ho4vjazf&amp;dl=0<br><br></span></div>
+<div id="wb_Obtaining_sequence_data" style="position:absolute;left:364px;top:4133px;width:36px;height:33px;z-index:74;">
+<div id="Obtaining_sequence_data" style="visibility:hidden;"></div>
+</div>
 
 </body>
 </html>
