@@ -18,7 +18,7 @@
 document.addEventListener('DOMContentLoaded', function(event)
 {
    var shapePath = document.querySelector('#MorphingIcon2-shape');
-   var paths = ["M0 0 L370 0 L370 18583 L0 18583Z "];
+   var paths = ["M0 0 L370 0 L370 34226 L0 34226Z "];
    var interpolator = [];
    interpolator[0] = polymorph.interpolate([paths[0], paths[0]]);
    let progress = { prop: 0 };
@@ -129,9 +129,9 @@ document.addEventListener('DOMContentLoaded', function(event)
 </head>
 <body data-bs-spy="scroll">
 <div id="wb_MorphingIcon2">
-<svg id="MorphingIcon2" height="100%" width="100%" style="position:absolute;height:100%;width:100%;left:0;top:0;overflow:visible;" viewBox="0 0 370 18583" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg id="MorphingIcon2" height="100%" width="100%" style="position:absolute;height:100%;width:100%;left:0;top:0;overflow:visible;" viewBox="0 0 370 34226" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
 <defs>
-   <path id="MorphingIcon2-shape" d="M0 0 L370 0 L370 18583 L0 18583Z " vector-effect="non-scaling-stroke" />
+   <path id="MorphingIcon2-shape" d="M0 0 L370 0 L370 34226 L0 34226Z " vector-effect="non-scaling-stroke" />
 </defs>
 <use xlink:href="#MorphingIcon2-shape" data-href="#MorphingIcon2-shape" style="fill:#606060;stroke:#0000FF;stroke-width:1"/>
 </svg>
@@ -304,6 +304,15 @@ document.addEventListener('DOMContentLoaded', function(event)
 <li class="nav-item dropdown-item">
 <a href="#MetaBat2_mac_and_wsl_" class="nav-link">MetaBat2(mac and wsl)</a>
 </li>
+<li class="nav-item dropdown-item">
+<a href="#CheckM" class="nav-link">CheckM</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="#Prokka" class="nav-link">Prokka</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="#HTSeq" class="nav-link">HTSeq</a>
+</li>
 </ul>
 </li>
 <li class="nav-item dropdown">
@@ -334,6 +343,23 @@ document.addEventListener('DOMContentLoaded', function(event)
 </li>
 </ul>
 </li>
+<li class="nav-item dropdown">
+<a href="#" class="dropdown-toggle" data-bs-placement="bottom-start" data-bs-toggle="dropdown">Workshop-Day 3<span class="arrow"></span></a>
+<ul class="dropdown-menu">
+<li class="nav-item dropdown-item">
+<a href="#CheckM_code" class="nav-link">CheckM_code</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="#Prodigal" class="nav-link">Prodigal</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="#Prokka-Funtional_annotation" class="nav-link">Prokka-Funtional annotation</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="#HTSeq-Quantif" class="nav-link">HTSeq-Quantif</a>
+</li>
+</ul>
+</li>
 <li class="nav-item">
 <a href="#Resources" class="nav-link">Resource</a>
 </li>
@@ -343,11 +369,11 @@ document.addEventListener('DOMContentLoaded', function(event)
 </div></div>
 <div id="wb_Image5" style="position:absolute;left:614px;top:2125px;width:379px;height:196px;z-index:38;">
 <img src="images/3.png" id="Image5" alt="" width="379" height="197"></div>
-<img src="images/img0006.png" id="Banner4" alt="Obtaining sequence data" style="border-width:0;position:absolute;left:405px;top:7869px;width:856px;height:44px;z-index:39;" width="856" height="44">
-<div id="wb_Obtaining_sequence_data" style="position:absolute;left:365px;top:7874px;width:36px;height:33px;z-index:40;">
+<img src="images/img0006.png" id="Banner4" alt="Obtaining sequence data" style="border-width:0;position:absolute;left:410px;top:17088px;width:856px;height:44px;z-index:39;" width="856" height="44">
+<div id="wb_Obtaining_sequence_data" style="position:absolute;left:370px;top:17093px;width:36px;height:33px;z-index:40;">
 <div id="Obtaining_sequence_data" style="visibility:hidden;"></div>
 </div>
-<div id="wb_Text9" style="position:absolute;left:404px;top:7944px;width:859px;height:599px;text-align:justify;z-index:41;">
+<div id="wb_Text9" style="position:absolute;left:409px;top:17163px;width:859px;height:599px;text-align:justify;z-index:41;">
 <p>You can either bring your sequence of intrest or dowload the sequence from online resources. One of the most useful online resources to download archive sequence files is using NCBI SRA. To do so:</p>
 <br>
 <ul style="list-style-type:upper-latin;">
@@ -368,23 +394,23 @@ document.addEventListener('DOMContentLoaded', function(event)
 <br>
 <br>
 <br></div>
-<div id="wb_Text23" style="position:absolute;left:407px;top:8116px;width:837px;height:18px;z-index:42;">
+<div id="wb_Text23" style="position:absolute;left:412px;top:17335px;width:837px;height:18px;z-index:42;">
 <p>sudo apt install sra-toolkit</p></div>
-<div id="wb_Text24" style="position:absolute;left:407px;top:8246px;width:837px;height:18px;z-index:43;">
+<div id="wb_Text24" style="position:absolute;left:412px;top:17465px;width:837px;height:18px;z-index:43;">
 <p>prefetch SRR29754043</p></div>
-<div id="wb_Text25" style="position:absolute;left:407px;top:8390px;width:837px;height:18px;z-index:44;">
+<div id="wb_Text25" style="position:absolute;left:412px;top:17609px;width:837px;height:18px;z-index:44;">
 <p>fastq-dump --split-files SRR29754043&nbsp;&nbsp; -O your/output/file</p></div>
-<div id="wb_Text26" style="position:absolute;left:406px;top:8342px;width:837px;height:18px;z-index:45;">
+<div id="wb_Text26" style="position:absolute;left:411px;top:17561px;width:837px;height:18px;z-index:45;">
 <p>cd SRR29754043</p></div>
-<div id="wb_Text27" style="position:absolute;left:403px;top:8475px;width:837px;height:54px;z-index:46;">
+<div id="wb_Text27" style="position:absolute;left:408px;top:17694px;width:837px;height:54px;z-index:46;">
 <p>cd your/output/folder</p>
 <br>
-<p>fastqc &nbsp;*fastq&nbsp;&nbsp; -O SRA_fastq</p></div>
-<img src="images/img0007.png" id="Banner5" alt="Trimming sequence data" style="border-width:0;position:absolute;left:403px;top:8623px;width:856px;height:44px;z-index:47;" width="856" height="44">
-<div id="wb_Trimming_sequence_data" style="position:absolute;left:365px;top:8629px;width:36px;height:33px;z-index:48;">
+<p>fastqc&nbsp; *fastq&nbsp;&nbsp; -O SRA_fastq</p></div>
+<img src="images/img0007.png" id="Banner5" alt="Trimming sequence data" style="border-width:0;position:absolute;left:398px;top:17833px;width:856px;height:44px;z-index:47;" width="856" height="44">
+<div id="wb_Trimming_sequence_data" style="position:absolute;left:360px;top:17839px;width:36px;height:33px;z-index:48;">
 <div id="Trimming_sequence_data" style="visibility:hidden;"></div>
 </div>
-<div id="wb_Text28" style="position:absolute;left:407px;top:8667px;width:859px;height:744px;z-index:49;">
+<div id="wb_Text28" style="position:absolute;left:402px;top:17877px;width:859px;height:744px;z-index:49;">
 <p>There are a variety of software for Trimming (e.g, removing adapter). Adapter sequences should be removed from reads because they interfere with downstream analyses, such as alignment of reads to a reference. SRA include few changes to the sequnce files, that are not compatible with some of the analysis. That is why we are going to use these sequences throughtout the workshop. However, for triming you can use your SRA sequences for pratice.</p>
 <br>
 <ul style="list-style-type:upper-latin;">
@@ -409,12 +435,12 @@ document.addEventListener('DOMContentLoaded', function(event)
 <p>It works with FASTQ (using phred + 33 or phred + 64 quality scores, depending on the Illumina pipeline used), either uncompressed or gzipp'ed FASTQ. Use of gzip format is determined based on the .gz extension.</p>
 <br>
 <p>For single-ended data, one input and one output file are specified, plus the processing steps. For paired-end data, two input files are specified, and 4 output files, 2 for the 'paired' output where both reads survived the processing, and 2 for corresponding 'unpaired' output where a read survived, but the partner read did not.</p></div>
-<div id="wb_Text29" style="position:absolute;left:398px;top:8839px;width:837px;height:18px;z-index:50;">
+<div id="wb_Text29" style="position:absolute;left:393px;top:18048px;width:837px;height:18px;z-index:50;">
 <p>grep AGATGTGTATAAGAGACAG&nbsp; SRR29754043_2.fastq</p></div>
-<div id="wb_Text30" style="position:absolute;left:398px;top:9176px;width:837px;height:54px;z-index:51;">
+<div id="wb_Text30" style="position:absolute;left:393px;top:18386px;width:837px;height:54px;z-index:51;">
 <p>java -jar trimmomatic-0.39.jar PE S28_R1.gz S28_R2.gz output_forward_paired.fq.gz output_forward_unpaired.fq.gz output_reverse_paired.fq.gz output_reverse_unpaired.fq.gz ILLUMINACLIP:NexteraPE-PE.fa:2:30:10:2:True LEADING:3 TRAILING:3 MINLEN:36</p></div>
-<img src="images/img0008.png" id="Banner6" alt="Removing host contamination" style="border-width:0;position:absolute;left:403px;top:9471px;width:856px;height:44px;z-index:52;" width="856" height="44">
-<div id="wb_Removing_host_contamination" style="position:absolute;left:371px;top:9471px;width:36px;height:33px;z-index:53;">
+<img src="images/img0008.png" id="Banner6" alt="Removing host contamination" style="border-width:0;position:absolute;left:398px;top:18681px;width:856px;height:44px;z-index:52;" width="856" height="44">
+<div id="wb_Removing_host_contamination" style="position:absolute;left:366px;top:18681px;width:36px;height:33px;z-index:53;">
 <div id="Removing_host_contamination" style="visibility:hidden;"></div>
 </div>
 <img src="images/img0009.png" id="Banner7" alt="Bowtie2 (WSL)" style="border-width:0;position:absolute;left:403px;top:2734px;width:856px;height:44px;z-index:54;" width="856" height="44">
@@ -430,7 +456,7 @@ document.addEventListener('DOMContentLoaded', function(event)
 <p>sudo apt install bowtie2</p></div>
 <div id="wb_Text34" style="position:absolute;left:407px;top:3247px;width:837px;height:18px;z-index:59;">
 <p>bowtie2 --help</p></div>
-<div id="wb_Text36" style="position:absolute;left:405px;top:9570px;width:862px;height:1389px;text-align:justify;z-index:60;">
+<div id="wb_Text36" style="position:absolute;left:400px;top:18780px;width:862px;height:1389px;text-align:justify;z-index:60;">
 <p>Sometimes we have host DNA and we need to remove the host DNA before doing any downstream analysis. For example, if I am looking at mice gut microbiome, I do not need mice DNA, however, during the DNA extractions some of the mice gut intestinal epithelial DNA will be sequnece as well. To remove that we are going to use Bowtie2. Bowtie2 is a refrence base alinement and has huge application in RNA and WG sequencing. To remove host DNA run below code. We will follow the instruction provided here:</p>
 <p style="font-size:20px;line-height:23px;font-weight:bold;">https://www.metagenomics.wiki/tools/short-read/remove-host-sequences</p>
 <p style="font-size:20px;line-height:23px;font-weight:bold;">&nbsp;</p>
@@ -474,14 +500,14 @@ document.addEventListener('DOMContentLoaded', function(event)
 <p>https://open.bioqueue.org/home/knowledge/showKnowledge/sig/bowtie2</p>
 <p>Archives indexes: https://bowtie-bio.sourceforge.net/bowtie2/news.shtml</p>
 <br></div>
-<div id="wb_Text37" style="position:absolute;left:406px;top:10369px;width:829px;height:36px;z-index:61;">
+<div id="wb_Text37" style="position:absolute;left:401px;top:19579px;width:829px;height:36px;z-index:61;">
 <p>bowtie2&nbsp; -x 0_Host_genome/Solanaceae/Solanaceae&nbsp; -1 S28_R1.gz&nbsp; -2 S28_R2.gz&nbsp; --un-conc-gz&nbsp;&nbsp; S28_removed_Solanaceae&nbsp; -S Mapped_and_unmapped_Solanaceae.sam&nbsp; -p 20 --very-sensitive-local</p></div>
-<div id="wb_Text35" style="position:absolute;left:398px;top:10142px;width:837px;height:18px;z-index:62;">
+<div id="wb_Text35" style="position:absolute;left:393px;top:19352px;width:837px;height:18px;z-index:62;">
 <p> bowtie2-build Solanaceae.fna&nbsp; Solanaceae --threads 20</p></div>
-<div id="wb_Image7" style="position:absolute;left:566px;top:9767px;width:457px;height:221px;z-index:63;">
+<div id="wb_Image7" style="position:absolute;left:561px;top:18977px;width:457px;height:221px;z-index:63;">
 <img src="images/6.png" id="Image7" alt="" width="457" height="227"></div>
-<img src="images/img0010.png" id="Banner8" alt="Day 2- Assembly" style="border-width:0;position:absolute;left:414px;top:13881px;width:856px;height:44px;z-index:64;" width="856" height="44">
-<div id="wb_Assembly" style="position:absolute;left:378px;top:13887px;width:36px;height:33px;z-index:65;">
+<img src="images/img0010.png" id="Banner8" alt="Day 2- Assembly" style="border-width:0;position:absolute;left:409px;top:23091px;width:856px;height:44px;z-index:64;" width="856" height="44">
+<div id="wb_Assembly" style="position:absolute;left:373px;top:23097px;width:36px;height:33px;z-index:65;">
 <div id="Assembly" style="visibility:hidden;"></div>
 </div>
 <img src="images/img0011.png" id="Banner9" alt="MEGAHIT(WSL)" style="border-width:0;position:absolute;left:407px;top:5221px;width:856px;height:44px;z-index:66;" width="856" height="44">
@@ -490,7 +516,7 @@ document.addEventListener('DOMContentLoaded', function(event)
 </div>
 <div id="wb_Text39" style="position:absolute;left:404px;top:5265px;width:859px;height:532px;text-align:justify;z-index:68;">
 <span style="color:#000000;font-family:'Times New Roman';font-size:16px;"><br>MEGAHIT: there are different ways to install MEGAHIT. The esiest way is using conda. On WSL system I did not have conda (and probably most of you also do not) so I had to install conda first.<br><br></span><span style="color:#8B0000;font-family:'Times New Roman';font-size:16px;"><strong>A) install conda </strong></span><span style="color:#000000;font-family:'Times New Roman';font-size:16px;">(again diffent ways to install conda): first go to https://repo.anaconda.com/archive/ and based on your system download (copy the link) the appropriate conda. For example for my WSL&nbsp; &quot;Anaconda3-2024.06-1-Linux-x86_64.sh&quot; is the appropriate package. <br><br>1. Open your&nbsp; terminal:<br><br>WSL:&nbsp;&nbsp; wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh<br><br>2. Run the installation script: bash Anaconda[YOUR VERSION].sh<br><br>3. Read the license agreement and follow the prompts to accept.<br><br>4. Close WSL and open it again<br><br>5. Type conda --version to see if the isntallation was successful.<br><br><br><br><br><br><br><br><br><br><br>6. Now use conda to install megahit. </span></div>
-<div id="wb_Text40" style="position:absolute;left:414px;top:14892px;width:859px;height:972px;text-align:justify;z-index:69;">
+<div id="wb_Text40" style="position:absolute;left:401px;top:24587px;width:859px;height:972px;text-align:justify;z-index:69;">
 <ul style="list-style-type:upper-latin;">
 <li style="margin:0 0 0 24px;">There are many software for genome assembly. MEGAHIT is an ultra-fast and memory-efficient NGS assembler. It is optimized for metagenomes, but also works well on generic single genome assembly (small or mammalian size) and single-cell assembly.
 </li>
@@ -539,15 +565,15 @@ document.addEventListener('DOMContentLoaded', function(event)
 <br>
 <br>
 <br></div>
-<div id="wb_Image9" style="position:absolute;left:468px;top:14030px;width:670px;height:273px;z-index:70;">
+<div id="wb_Image9" style="position:absolute;left:463px;top:23240px;width:670px;height:273px;z-index:70;">
 <img src="images/8.png" id="Image9" alt="" width="670" height="273"></div>
-<div id="wb_Image11" style="position:absolute;left:471px;top:10531px;width:643px;height:245px;z-index:71;">
+<div id="wb_Image11" style="position:absolute;left:466px;top:19741px;width:643px;height:245px;z-index:71;">
 <img src="images/7.png" id="Image11" alt="" width="643" height="246"></div>
-<img src="images/img0012.png" id="Banner10" alt="Binning" style="border-width:0;position:absolute;left:414px;top:15666px;width:856px;height:44px;z-index:72;" width="856" height="44">
-<div id="wb_Binning" style="position:absolute;left:380px;top:15679px;width:36px;height:33px;z-index:73;">
+<img src="images/img0012.png" id="Banner10" alt="Binning" style="border-width:0;position:absolute;left:401px;top:25361px;width:856px;height:44px;z-index:72;" width="856" height="44">
+<div id="wb_Binning" style="position:absolute;left:367px;top:25374px;width:36px;height:33px;z-index:73;">
 <div id="Binning" style="visibility:hidden;"></div>
 </div>
-<div id="wb_Text44" style="position:absolute;left:424px;top:15666px;width:859px;height:1319px;z-index:74;">
+<div id="wb_Text44" style="position:absolute;left:411px;top:25361px;width:856px;height:1340px;z-index:74;">
 <p style="font-size:19px;line-height:21px;">&nbsp;</p>
 <p style="font-size:19px;line-height:21px;">&nbsp;</p>
 <p style="font-size:19px;line-height:21px;">&nbsp;</p>
@@ -610,18 +636,18 @@ document.addEventListener('DOMContentLoaded', function(event)
 <p style="font-size:19px;line-height:21px;">&nbsp;</p>
 <p style="font-size:19px;line-height:21px;">&nbsp;</p>
 <p style="font-size:19px;line-height:21px;">&nbsp;</p></div>
-<div id="wb_Image6" style="position:absolute;left:498px;top:8890px;width:652px;height:79px;z-index:75;">
+<div id="wb_Image6" style="position:absolute;left:493px;top:18100px;width:652px;height:79px;z-index:75;">
 <img src="images/5.png" id="Image6" alt="" width="652" height="79"></div>
-<div id="wb_Image3" style="position:absolute;left:517px;top:14575px;width:641px;height:286px;z-index:76;">
+<div id="wb_Image3" style="position:absolute;left:512px;top:23785px;width:641px;height:286px;z-index:76;">
 <img src="images/9.png" id="Image3" alt="" width="641" height="311"></div>
-<div id="wb_Text38" style="position:absolute;left:409px;top:11297px;width:837px;height:36px;z-index:77;">
+<div id="wb_Text38" style="position:absolute;left:404px;top:20507px;width:837px;height:36px;z-index:77;">
 <p>mv S1_removed_Solanaceae.1&nbsp; &nbsp;S1_host_removed_R1.fastq</p>
 <p>mv S1_removed_Solanaceae.2&nbsp;&nbsp; S1_host_removed_R2.fastq</p></div>
-<div id="wb_Text58" style="position:absolute;left:410px;top:12112px;width:837px;height:18px;z-index:78;">
+<div id="wb_Text58" style="position:absolute;left:405px;top:21322px;width:837px;height:18px;z-index:78;">
 <p>samtools index S28_sorted.bam S28_sorted.bai</p></div>
-<div id="wb_Text59" style="position:absolute;left:416px;top:11833px;width:837px;height:18px;z-index:79;">
+<div id="wb_Text59" style="position:absolute;left:411px;top:21043px;width:837px;height:54px;z-index:79;">
 <p>samtools sort S28_mapped_and_unmapped.bam -o S28_sorted.bam</p></div>
-<div id="wb_Text60" style="position:absolute;left:414px;top:14340px;width:837px;height:54px;z-index:80;">
+<div id="wb_Text60" style="position:absolute;left:409px;top:23550px;width:837px;height:18px;z-index:80;">
 <p>megahit -1 SAMPLE_R1.fastq&nbsp; -2 SAMPLE_R2.fastq&nbsp; -t 20&nbsp; -o megahit_result</p></div>
 <img src="images/img0013.png" id="Banner11" alt="MetaBat2(mac and wsl)" style="border-width:0;position:absolute;left:409px;top:6435px;width:854px;height:44px;z-index:81;" width="854" height="44">
 <div id="wb_MetaBat2_mac_and_wsl_" style="position:absolute;left:371px;top:6441px;width:36px;height:33px;z-index:82;">
@@ -629,17 +655,17 @@ document.addEventListener('DOMContentLoaded', function(event)
 </div>
 <div id="wb_Text53" style="position:absolute;left:412px;top:6342px;width:837px;height:18px;z-index:83;">
 <p>&nbsp; conda install bioconda::megahit</p></div>
-<div id="wb_Image10" style="position:absolute;left:595px;top:6719px;width:563px;height:405px;z-index:84;">
+<div id="wb_Image10" style="position:absolute;left:511px;top:6689px;width:563px;height:405px;z-index:84;">
 <img src="images/13.png" id="Image10" alt="" width="563" height="406"></div>
 <div id="wb_Text45" style="position:absolute;left:1700px;top:4186px;width:357px;height:15px;z-index:85;">
 &nbsp;</div>
-<div id="wb_Text55" style="position:absolute;left:424px;top:15963px;width:837px;height:18px;z-index:86;">
+<div id="wb_Text55" style="position:absolute;left:411px;top:25658px;width:837px;height:18px;z-index:86;">
 <p>jgi_summarize_bam_contig_depths --outputDepth depth.txt *.bam </p></div>
-<div id="wb_Text56" style="position:absolute;left:424px;top:16142px;width:837px;height:18px;z-index:87;">
+<div id="wb_Text56" style="position:absolute;left:411px;top:25837px;width:837px;height:18px;z-index:87;">
 <p> metabat2 -i final.contigs.fa&nbsp; -a depth.txt -o bins_dir/bin</p></div>
-<div id="wb_Image12" style="position:absolute;left:415px;top:16330px;width:857px;height:75px;z-index:88;">
+<div id="wb_Image12" style="position:absolute;left:402px;top:26025px;width:857px;height:75px;z-index:88;">
 <img src="images/12.png" id="Image12" alt="" width="857" height="75"></div>
-<div id="wb_Image13" style="position:absolute;left:566px;top:16625px;width:564px;height:251px;z-index:89;">
+<div id="wb_Image13" style="position:absolute;left:553px;top:26320px;width:564px;height:251px;z-index:89;">
 <img src="images/14.png" id="Image13" alt="" width="564" height="337"></div>
 <img src="images/img0014.png" id="Banner12" alt="Bowtie2 (Mac)" style="border-width:0;position:absolute;left:405px;top:3351px;width:856px;height:44px;z-index:90;" width="856" height="44">
 <div id="wb_Bowtie2__Mac_" style="position:absolute;left:364px;top:3357px;width:36px;height:33px;z-index:91;">
@@ -669,19 +695,19 @@ document.addEventListener('DOMContentLoaded', function(event)
 <span style="color:#000000;font-family:'Times New Roman';font-size:16px;">1. Install conda (make sure to install pkg not bash! I provided the link for pkg below)<br>https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg <br><br><br>2. Check to see if your installation was successful by typing conda --version in your terminal.<br><br><br><br><br><br><br>(if asked you for Proceed, select y)<br><br><br>3. Now install megahit using: </span></div>
 <div id="wb_Text51" style="position:absolute;left:411px;top:6156px;width:836px;height:15px;z-index:103;">
 <p>conda --version</p></div>
-<div id="wb_Text52" style="position:absolute;left:408px;top:6655px;width:837px;height:18px;z-index:104;">
+<div id="wb_Text52" style="position:absolute;left:402px;top:6620px;width:837px;height:18px;z-index:104;">
 <p> conda install bioconda/label/cf201901::metabat2 </p></div>
-<div id="wb_Text54" style="position:absolute;left:402px;top:6503px;width:903px;height:177px;z-index:105;">
-<span style="color:#000000;font-family:'Times New Roman';font-size:16px;">For working on this software for both Mac and Windows you need to use Linux. I could not find the issue! However, still you can give it a try!<br><br>You can install the software in multiple ways!<br><br>1- Conda (both Max and WSL): https://anaconda.org/bioconda/metabat2 <br><br><br><br></span></div>
-<div id="wb_Image4" style="position:absolute;left:478px;top:16985px;width:651px;height:211px;z-index:106;">
+<div id="wb_Text54" style="position:absolute;left:402px;top:6503px;width:903px;height:159px;z-index:105;">
+<span style="color:#000000;font-family:'Times New Roman';font-size:16px;">This software only works on Linux and did not work on WSL and Mac (for me)!<br><br>You can install the software in multiple ways!<br><br>1- Conda (both Max and WSL): https://anaconda.org/bioconda/metabat2 <br><br><br><br></span></div>
+<div id="wb_Image4" style="position:absolute;left:465px;top:26680px;width:651px;height:211px;z-index:106;">
 <img src="images/77.png" id="Image4" alt="" width="651" height="211"></div>
-<div id="wb_Text61" style="position:absolute;left:408px;top:11170px;width:855px;height:972px;z-index:107;">
+<div id="wb_Text61" style="position:absolute;left:403px;top:20366px;width:855px;height:972px;z-index:107;">
 <span style="color:#000000;font-family:'Times New Roman';font-size:19px;"><br><br>A. Change the file names for downstream analyses.<br><br><br> <br><br><br><br><br><br><br><br><br>B. Change SAM file to BAM file. <br><br><br><br><br><br><br><br><br><br><br><br>Change Bam to sorted bam<br><br><br><br><br><br><br><br><br><br><br><br><br>Creating a BAM index file<br><br><br><br><br><br><br></span></div>
-<img src="images/img0015.png" id="Banner15" alt="Samtools" style="border-width:0;position:absolute;left:406px;top:11112px;width:856px;height:44px;z-index:108;" width="856" height="44">
-<div id="wb_Samtools" style="position:absolute;left:370px;top:11118px;width:36px;height:33px;z-index:109;">
+<img src="images/img0015.png" id="Banner15" alt="Samtools" style="border-width:0;position:absolute;left:401px;top:20322px;width:856px;height:44px;z-index:108;" width="856" height="44">
+<div id="wb_Samtools" style="position:absolute;left:365px;top:20328px;width:36px;height:33px;z-index:109;">
 <div id="Samtools" style="visibility:hidden;"></div>
 </div>
-<div id="wb_Text41" style="position:absolute;left:410px;top:11572px;width:837px;height:18px;z-index:110;">
+<div id="wb_Text41" style="position:absolute;left:405px;top:20782px;width:837px;height:18px;z-index:110;">
 <p> samtools view -bS Mapped_and_unmapped_Solanaceae.sam&nbsp; &gt; S28_mapped_and_unmapped.bam</p></div>
 <img src="images/img0017.png" id="Banner13" alt="Samtools(WSL-Mac)" style="border-width:0;position:absolute;left:415px;top:4515px;width:856px;height:44px;z-index:111;" width="856" height="44">
 <div id="wb_Samtools_WSL-Mac_" style="position:absolute;left:371px;top:4515px;width:36px;height:33px;z-index:112;">
@@ -693,11 +719,11 @@ document.addEventListener('DOMContentLoaded', function(event)
 <p>conda install bioconda/label/cf201901::samtools </p></div>
 <div id="wb_Text63" style="position:absolute;left:404px;top:4871px;width:859px;height:32px;text-align:justify;z-index:115;">
 <span style="color:#000000;font-family:'Times New Roman';font-size:29px;">or</span></div>
-<img src="images/img0018.png" id="Banner16" alt="Resource" style="border-width:0;position:absolute;left:409px;top:17314px;width:856px;height:44px;z-index:116;" width="856" height="44">
-<div id="wb_Resources" style="position:absolute;left:371px;top:17325px;width:36px;height:33px;z-index:117;">
+<img src="images/img0018.png" id="Banner16" alt="Resource" style="border-width:0;position:absolute;left:437px;top:31957px;width:856px;height:44px;z-index:116;" width="856" height="44">
+<div id="wb_Resources" style="position:absolute;left:399px;top:31968px;width:36px;height:33px;z-index:117;">
 <div id="Resources" style="visibility:hidden;"></div>
 </div>
-<div id="wb_Text64" style="position:absolute;left:405px;top:17402px;width:859px;height:1240px;text-align:justify;z-index:118;">
+<div id="wb_Text64" style="position:absolute;left:449px;top:32080px;width:859px;height:1985px;text-align:justify;z-index:118;">
 <br>
 <br>
 <p>0_Data: </p>
@@ -750,7 +776,141 @@ document.addEventListener('DOMContentLoaded', function(event)
 <br>
 <p>https://www.dropbox.com/scl/fo/s1fpvta4te3r85l9uffho/AJvHs-EV8diNP78dKqJpe3c?rlkey=o2b0ew12nuymln2wons5ymrt0&amp;st=ubcgg97h&amp;dl=0</p>
 <br>
+<br>
+<p>7-CheckM</p>
+<br>
+<p>https://www.dropbox.com/scl/fo/c18a3277lmak0p0fdklet/AH7N4k4P6rrkQaADwFXMgJ4?rlkey=tbato504aw7byh56udg8lmo2h&amp;st=fe3nyyzq&amp;dl=0</p>
+<br>
+<br>
+<p>8_Gene_Prediction</p>
+<br>
+<p>https://www.dropbox.com/scl/fo/j14zw3pynhehfsd0yvxy8/ABeOY9F5Fh8-g0GxYBR2RtI?rlkey=958zv9jeeyn7cqsnq4gfrxbf0&amp;st=cimhhnd5&amp;dl=0</p>
+<br>
+<br>
+<br>
+<p>9_Funtional_anotation_prokka</p>
+<br>
+<br>
+<p>https://www.dropbox.com/scl/fo/szjbdlxu89y60o6hvu8xi/ANwCrYDtJ5KCjP_4sVj5ENM?rlkey=x9x2g5umixb57ysf0bzx9eywc&amp;st=89xwi6nb&amp;dl=0</p>
+<br>
+<br>
+<br>
+<br>
+<p>11_Quantify_genes</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>https://www.dropbox.com/scl/fo/5mytb3ra1vbino9etnwzt/AHecX_-rQvNjrL3_xcDg7so?rlkey=4hk7szw33cm6vzead1opwflkv&amp;st=cg0u405g&amp;dl=0</p>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br></div>
+<img src="images/img0019.png" id="Banner17" alt="CheckM" style="border-width:0;position:absolute;left:413px;top:7380px;width:854px;height:44px;z-index:119;" width="854" height="44">
+<div id="wb_CheckM" style="position:absolute;left:373px;top:7386px;width:36px;height:33px;z-index:120;">
+<div id="CheckM" style="visibility:hidden;"></div>
+</div>
+<div id="wb_Image8" style="position:absolute;left:381px;top:7478px;width:69px;height:69px;z-index:121;">
+<img src="images/4.png" id="Image8" alt="" width="69" height="69"></div>
+<div id="wb_Text65" style="position:absolute;left:464px;top:7478px;width:801px;height:106px;z-index:122;">
+<span style="color:#000000;font-family:'Times New Roman';font-size:16px;"><br><br><br><br><br></span></div>
+<div id="wb_Image16" style="position:absolute;left:381px;top:7985px;width:69px;height:69px;z-index:123;">
+<img src="images/10000.jpg" id="Image16" alt="" width="69" height="39"></div>
+<div id="wb_Text66" style="position:absolute;left:464px;top:7899px;width:801px;height:68px;z-index:124;">
+<span style="color:#000000;font-family:'Times New Roman';font-size:16px;"><br><br><br></span></div>
+<img src="images/img0020.png" id="Banner18" alt="Prokka" style="border-width:0;position:absolute;left:413px;top:8382px;width:854px;height:44px;z-index:125;" width="854" height="44">
+<div id="wb_Image17" style="position:absolute;left:381px;top:8550px;width:69px;height:69px;z-index:126;">
+<img src="images/4.png" id="Image17" alt="" width="69" height="69"></div>
+<div id="wb_Image18" style="position:absolute;left:381px;top:8750px;width:69px;height:69px;z-index:127;">
+<img src="images/10000.jpg" id="Image18" alt="" width="69" height="39"></div>
+<div id="wb_Prokka" style="position:absolute;left:370px;top:8393px;width:36px;height:33px;z-index:128;">
+<div id="Prokka" style="visibility:hidden;"></div>
+</div>
+<div id="wb_Text67" style="position:absolute;left:454px;top:8567px;width:783px;height:18px;z-index:129;">
+<p>brew install brewsci/bio/prokka</p></div>
+<div id="wb_Text68" style="position:absolute;left:463px;top:8769px;width:783px;height:18px;z-index:130;">
+<p>conda install -c conda-forge -c bioconda -c defaults prokka</p></div>
+<div id="wb_Text69" style="position:absolute;left:450px;top:7478px;width:798px;height:250px;z-index:131;">
+<p>brew install hmmer</p>
+<p>brew install prodigal</p>
+<p>brew install pplacer</p>
+<p>pip3 install numpy</p>
+<p>pip3 install matplotlib</p>
+<p>pip3 install pysam</p>
+<br>
+<p>pip3 install checkm-genome</p>
+<br>
+<br>
+<br>
+<p>Also download the reference file and put it into your path</p>
+<br>
+<p>https://zenodo.org/records/7401545#.Y44ymHbMJD8 </p></div>
+<div id="wb_Text70" style="position:absolute;left:465px;top:7923px;width:782px;height:232px;z-index:132;">
+<p>conda create -n checkm python=3.9</p>
+<p>conda activate checkm</p>
+<p>conda install -c bioconda numpy matplotlib pysam</p>
+<p>conda install -c bioconda hmmer prodigal pplacer</p>
+<p>pip3 install checkm-genome</p>
+<br>
+<br>
+<br>
+<br>
+<p>Also download the reference file and put it into your path (export CHECKM_DATA_PATH=/path/to/my_checkm_data)</p>
+<br>
+<p>https://zenodo.org/records/7401545#.Y44ymHbMJD8 </p></div>
+<img src="images/img0021.png" id="Banner19" alt="HTSeq" style="border-width:0;position:absolute;left:430px;top:9288px;width:854px;height:44px;z-index:133;" width="854" height="44">
+<div id="wb_Image19" style="position:absolute;left:397px;top:9451px;width:69px;height:69px;z-index:134;">
+<img src="images/4.png" id="Image19" alt="" width="69" height="69"></div>
+<div id="wb_Image20" style="position:absolute;left:397px;top:9651px;width:69px;height:69px;z-index:135;">
+<img src="images/10000.jpg" id="Image20" alt="" width="69" height="39"></div>
+<div id="wb_HTSeq" style="position:absolute;left:386px;top:9294px;width:36px;height:33px;z-index:136;">
+<div id="HTSeq" style="visibility:hidden;"></div>
+</div>
+<div id="wb_Text71" style="position:absolute;left:470px;top:9468px;width:783px;height:18px;z-index:137;">
+<p>pip install HTSeq</p></div>
+<div id="wb_Text72" style="position:absolute;left:479px;top:9670px;width:783px;height:18px;z-index:138;">
+<p>pip install HTSeq</p></div>
+<img src="images/img0022.png" id="Banner20" alt="CheckM" style="border-width:0;position:absolute;left:404px;top:27208px;width:856px;height:44px;z-index:139;" width="856" height="44">
+<div id="wb_CheckM_code" style="position:absolute;left:365px;top:27208px;width:36px;height:33px;z-index:140;">
+<div id="CheckM_code" style="visibility:hidden;"></div>
+</div>
+<div id="wb_Text73" style="position:absolute;left:409px;top:27438px;width:859px;height:272px;z-index:141;">
+<span style="color:#000000;font-family:Calibri;font-size:35px;">Some of contigs are microbial genomes or might be viral genomes, and some are just fragments of one or multiple genomes. The idea is then to evaluate the completeness and the contamination of those bins to evaluate their quality and only consider genomes that are &gt;50% complete and &lt;10% contaminated.<br></span></div>
+<div id="wb_Text74" style="position:absolute;left:403px;top:27306px;width:837px;height:18px;z-index:142;">
+<p>checkm lineage_wf -x fa bins_dir/ METAG_checkm/&nbsp; --threads 16 -f METAG-checkm.tsv --tab_table</p></div>
+<div id="wb_Image21" style="position:absolute;left:403px;top:27737px;width:790px;height:271px;z-index:143;">
+<img src="images/egii5kmdbt.jpg" id="Image21" alt="" width="790" height="212"></div>
+<img src="images/img0023.png" id="Banner21" alt="Prodigal" style="border-width:0;position:absolute;left:424px;top:28291px;width:856px;height:44px;z-index:144;" width="856" height="44">
+<div id="wb_Prodigal" style="position:absolute;left:385px;top:28291px;width:36px;height:33px;z-index:145;">
+<div id="Prodigal" style="visibility:hidden;"></div>
+</div>
+<div id="wb_Text75" style="position:absolute;left:417px;top:28443px;width:837px;height:18px;z-index:146;">
+<p>prodigal -i my.metagenome.fna -o my.genes -a my.proteins.faa -p meta</p></div>
+<div id="wb_Image22" style="position:absolute;left:421px;top:28564px;width:605px;height:45px;z-index:147;">
+<img src="images/sx2nsc8l3n.jpg" id="Image22" alt="" width="605" height="46"></div>
+<img src="images/img0024.png" id="Banner22" alt="Prokka-Funtional annotation" style="border-width:0;position:absolute;left:418px;top:28804px;width:856px;height:44px;z-index:148;" width="856" height="44">
+<div id="wb_Prokka-Funtional_annotation" style="position:absolute;left:379px;top:28804px;width:36px;height:33px;z-index:149;">
+<div id="Prokka-Funtional_annotation" style="visibility:hidden;"></div>
+</div>
+<div id="wb_Text76" style="position:absolute;left:411px;top:28956px;width:837px;height:18px;z-index:150;">
+<p>prokka --outdir mydir --prefix mygenome final.contigs13.fa</p></div>
+<div id="wb_Text77" style="position:absolute;left:414px;top:29102px;width:859px;height:212px;z-index:151;">
+<span style="color:#000000;font-family:Calibri;font-size:35px;">Whole genome annotation is the process of identifying features of interest in a set of genomic DNA sequences, and labelling them with useful information. Prokka is a software tool to annotate bacterial, archaeal and viral genomes quickly and produce standards-compliant output files.</span></div>
+<div id="wb_Image23" style="position:absolute;left:476px;top:29372px;width:569px;height:283px;z-index:152;">
+<img src="images/Prokka.png" id="Image23" alt="" width="569" height="283"></div>
+<div id="wb_Image24" style="position:absolute;left:450px;top:29728px;width:702px;height:491px;z-index:153;">
+<img src="images/2024-10-22_16-38-59.png" id="Image24" alt="" width="702" height="491"></div>
+<img src="images/img0025.png" id="Banner23" alt="HTSeq-Quantif" style="border-width:0;position:absolute;left:423px;top:30592px;width:856px;height:44px;z-index:154;" width="856" height="44">
+<div id="wb_HTSeq-Quantif" style="position:absolute;left:384px;top:30592px;width:36px;height:33px;z-index:155;">
+<div id="HTSeq-Quantif" style="visibility:hidden;"></div>
+</div>
+<div id="wb_Text78" style="position:absolute;left:416px;top:30744px;width:837px;height:18px;z-index:156;">
+<p>htseq-count -r pos -t CDS -f bam S13.map.sorted.bam S13.gft &gt; S13.count</p></div>
+<div id="wb_Text79" style="position:absolute;left:426px;top:30881px;width:825px;height:53px;z-index:157;">
+<span style="color:#000000;font-family:'Times New Roman';font-size:24px;">htseq-count, a tool developed with HTSeq that preprocesses RNA-Seq data for differential expression analysis by counting the overlap of reads with gene</span></div>
 
 </body>
 </html>
